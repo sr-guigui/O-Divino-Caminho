@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Termômetro Espiritual - A Divina Comédia</title>
+
+    <!-- Chamando o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Substitua logo.jpg por uma imagem neutra ou de Dante Alighieri, se desejar -->
+        <img src="logo.png" width="400" alt="Dante Alighieri Logo">
+
+        <h2>Termômetro Espiritual</h2>
+        <p>Responda sinceramente e descubra o seu destino segundo a Divina Comédia, além de conselhos práticos para sua
+            alma.</p>
+
+        <form action="processa.php" method="POST">
+
+            <!-- Pergunta 1 -->
+            <div class="form-group">
+                <label>1. Você guarda algum erro muito grave (pecado mortal) do qual ainda não se arrependeu ou não
+                    buscou consertar/confessar?</label>
+                <select name="pecado_grave" required>
+                    <option value="">Selecione...</option>
+                    <option value="Sim">Sim, tenho erros graves não resolvidos.</option>
+                    <option value="Não">Não, procuro viver em paz com Deus e já me arrependi dos meus erros.</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 2 -->
+            <div class="form-group">
+                <label>2. Quando você erra, qual costuma ser o motivo principal do seu erro?</label>
+                <select name="motivo_erro" required>
+                    <option value="">Selecione...</option>
+                    <option value="Falta de controle">Falta de controle dos meus instintos e desejos.</option>
+                    <option value="Raiva">Explosões de raiva, agressividade ou violência.</option>
+                    <option value="Mentira">Mentira, falsidade, manipulação ou tirar vantagem dos outros.</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 3 -->
+            <div class="form-group">
+                <label>3. Qual desses defeitos (Pecados Capitais) você sente que mais domina o seu coração hoje?</label>
+                <select name="pecado_capital" required>
+                    <option value="">Selecione...</option>
+                    <option value="Orgulho">Orgulho (Soberba / achar-se superior)</option>
+                    <option value="Inveja">Inveja (Tristeza pelo bem do outro)</option>
+                    <option value="Ira">Ira (Raiva e desejo de vingança)</option>
+                    <option value="Preguiça">Preguiça (Apatia física ou espiritual)</option>
+                    <option value="Avareza">Avareza (Apego excessivo ao dinheiro e bens)</option>
+                    <option value="Gula">Gula (Excesso em comida ou bebida)</option>
+                    <option value="Luxúria">Luxúria (Busca desordenada por prazeres carnais)</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 4 -->
+            <div class="form-group">
+                <label>4. O quanto você é apegado aos prazeres materiais, dinheiro e ao reconhecimento das
+                    pessoas?</label>
+                <select name="apego" required>
+                    <option value="">Selecione...</option>
+                    <option value="Totalmente apegado">Sou totalmente apegado, minha vida gira em torno disso.</option>
+                    <option value="Tento lutar">Tento lutar contra o apego, mas ainda caio às vezes.</option>
+                    <option value="Desapegado">Sou praticamente desapegado, busco os bens espirituais.</option>
+                </select>
+            </div>
+
+            <!-- Pergunta 5 -->
+            <div class="form-group">
+                <label>5. Como você procura viver e demonstrar o seu amor a Deus e ao próximo no dia a dia?</label>
+                <select name="amor_deus" required>
+                    <option value="">Selecione...</option>
+                    <option value="Inconstante">Tento amar, mas sou inconstante ou faço coisas boas buscando
+                        reconhecimento.</option>
+                    <option value="Ativo">Amo através da ação: lutando pela justiça, ajudando o próximo e defendendo o
+                        certo.</option>
+                    <option value="Contemplativo">Amo através da contemplação: busco a oração profunda, o silêncio e a
+                        união íntima com Deus.</option>
+                </select>
+            </div>
+
+            <button type="submit">Revelar meu Destino Espiritual</button>
+        </form>
+    </div>
+</body>
+
+</html>
